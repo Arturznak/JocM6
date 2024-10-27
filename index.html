@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+     <!-- Input per introduir la paraula secreta -->
+    <input id= "paraulaSecreta" placeholder="Posa una paraula" type="password"/>
+    <!-- Input de tipis checkbox per mostrar/ocultar la paraula secreta -->
+    <input type="checkbox" id="mostrarCheckbox" onclick="mostrarParaula()"> Mostra
+    <!-- Botó per començar la partida -->
+    <button id="iniciarPartida" onclick="iniciarPartida()">Començar partida</button>
+       <!-- Aquí tenim un contenidor per als guions de la paraula a endevinar -->
+    <div id="guionsParaula"></div>
+
+    <h1 id = "textComencarPartida">Començar partida</h1>
+    <img src ="penjat_0.jpg">
+
+    <!-- Aquí tenim un contenidor on guardar la informació del jugador  -->
+<div id="informacioJugador">
+    <h2>Jugador 1</h2>
+    <p id="puntsActuals">Punts Partides Actuals: 0</p>
+    <p id="totalPartides">Total Partides: 0</p>
+    <p id="partidesGuanyades">Partides Guanyades: 0</p>
+    <p id="millorPartida">Partida amb més punts:</p>
+</div>
+
+<!-- Botons per jugar cada lletra -->
+    <div id="botonsLletra">
+        <button onclick="jugarLletra('A')">A</button>
+        <button onclick="jugarLletra('B')">B</button>
+        <button onclick="jugarLletra('C')">C</button>
+        <button onclick="jugarLletra('D')">D</button>
+        <button onclick="jugarLletra('E')">E</button>
+        <button onclick="jugarLletra('F')">F</button>
+        <button onclick="jugarLletra('G')">G</button>
+        <button onclick="jugarLletra('H')">H</button>
+        <button onclick="jugarLletra('I')">I</button>
+        <button onclick="jugarLletra('J')">J</button>
+        <button onclick="jugarLletra('K')">K</button>
+        <button onclick="jugarLletra('L')">L</button>
+        <button onclick="jugarLletra('M')">M</button>
+        <button onclick="jugarLletra('N')">N</button>
+        <button onclick="jugarLletra('O')">O</button>
+        <button onclick="jugarLletra('P')">P</button>
+        <button onclick="jugarLletra('Q')">Q</button>
+        <button onclick="jugarLletra('R')">R</button>
+        <button onclick="jugarLletra('S')">S</button>
+        <button onclick="jugarLletra('T')">T</button>
+        <button onclick="jugarLletra('U')">U</button>
+        <button onclick="jugarLletra('V')">V</button>
+        <button onclick="jugarLletra('W')">W</button>
+        <button onclick="jugarLletra('X')">X</button>
+        <button onclick="jugarLletra('Y')">Y</button>
+        <button onclick="jugarLletra('Z')">Z</button> 
+    </div>
+    <script src = index.js></script>
+
+</body>
+</html>
